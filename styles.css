@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "Myfont";
+  src: url(Fonts/truenolt.otf);
+}
+@font-face {
+  font-family: Myfont1;
+  src: url(Fonts/truenoultblk.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Myfont, sans-serif;
+}
+.container1 {
+  width: 100%;
+  background: #472424;
+}
+
+.nav-top {
+  height: 5vh;
+  background-color: #472424;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7vw;
+  font-weight: 400;
+  align-items: center;
+  margin: 0 auto;
+  width: 968px;
+}
+
+.nav-top .nav-top-left ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  gap: 2vw;
+}
+
+.nav-top .nav-top-left ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-top .nav-top-right {
+  display: flex;
+  gap: 1vw;
+}
+
+.nav-top .nav-top-right .nav-top-ic {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+}
+
+.nav-top .nav-top-right .nav-top-ic i {
+  font-size: 1.2vw;
+}
+
+.nav-top .nav-top-right .nav-top-btn {
+  display: flex;
+  gap: 0.4vw;
+  align-items: center;
+}
+
+.nav-top .nav-top-right .nav-top-btn a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.1);
+  box-shadow: -1px 0 0 rgba(255, 255, 255, 0.1);
+  font-size: 0.7vw;
+  padding: 1vw;
+}
+
+/** Nav **/
+
+.nav-down-container {
+  width: 100%;
+  background-color: #623232;
+}
+
+.nav-down {
+  width: 968px;
+  margin: 0 auto;
+  background-color: #623232;
+  height: 9vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.nav-down .nav-down-right ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2vw;
+}
+
+.nav-down-right ul li:hover {
+  border-bottom: 0.3vw #ff7373 solid;
+  gap: 10vw;
+}
+
+.nav-down .nav-down-right ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8;
+}
+
+/** Banner **/
+
+.banner {
+  height: 50vh;
+  display: flex;
+  background-color: #f0efee;
+  align-items: center;
+  gap: 5vw;
+}
+
+.banner img {
+  height: 63vh;
+  width: 40vw;
+  margin-left: -115px;
+  margin-top: -55px;
+}
+
+.description .price {
+  color: #623232;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.description .name {
+  color: #623232;
+  font-family: Myfont1, sans-serif;
+  font-size: 3.64vw;
+  font-weight: 400;
+}
+
+.description .variants {
+  color: #ff7373;
+  font-family: Myfont1, "sans-serif";
+  font-size: 2.6vw;
+  font-weight: 400;
+}
+
+.description a:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.description p {
+  color: #8a8784;
+  margin-bottom: 2.6vw;
+}
+
+.description a {
+  background-color: #ff7373;
+  color: #fff;
+  font-family: Myfont1, "sans-serif";
+  text-transform: uppercase;
+  padding: 0.83vw 2.44vw 0.83vw 2.44vw;
+  text-decoration: none;
+}
+
+.container {
+  width: 968px;
+  margin: 0 auto;
+}
+
+.banners {
+  margin-top: 2.96vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banners .other-banners {
+  margin-left: 1.6vw;
+  margin-top: -1.04vw;
+}
+
+.banners .other-banners .New_Arrivals img {
+  width: 25vw;
+}
+
+.banners .other-banners .athletes img {
+  width: 11.45vw;
+  margin-top: 1.56vw;
+  margin-left: 0.8vw;
+}
+
+.banners .other-banners .Premium img {
+  width: 11.45vw;
+  margin-top: 1.56vw;
+  margin-left: 0.8vw;
+}
+
+.products-heading {
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+}
+
+.products-heading a {
+  text-decoration: none;
+  font-size: 1.56vw;
+  color: #bdb9b5;
+  font-weight: bold;
+  font-family: Myfont, sans-serif;
+  margin-top: 8vh;
+}
+
+.products-heading .new {
+  font-family: Myfont1;
+  color: #623232;
+}
+
+.products-heading a:hover {
+  color: #623232;
+  font-family: Myfont1;
+}
+
+/*** Cards **/
+
+.card-control {
+  display: flex;
+  gap: 0.8vw;
+  flex-wrap: wrap;
+  margin: 8vh 0;
+}
+
+.card {
+  border: 2px solid #e0dfde;
+  width: 12vw;
+  padding: 1.1vw 1vw;
+  line-height: 2.5vh;
+}
+
+.card-title {
+  font-family: Myfont1;
+  color: #8a8784;
+  font-weight: 400;
+
+  margin-bottom: 1vh;
+}
+
+.card-head-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -1.1vw;
+}
+
+.card-head-right p {
+  background-color: #ff7373;
+  color: #fff;
+  padding: 0.3vw 0.4vw;
+
+  font-family: Myfont1;
+}
+
+.card-head {
+  flex-direction: column;
+  font-size: 1.25vw;
+  text-align: center;
+  position: absolute;
+  color: #ff7373;
+}
+.card-head small {
+  font-size: 0.8vw;
+  color: #8a8784;
+}
+
+.card-description {
+  color: #8a8784;
+}
+
+/** Brand Logos **/
+
+.brand-logos img {
+  margin-left: 2.3vw;
+  margin-top: 10vh;
+  cursor: pointer;
+}
+
+.laptop-use-photo {
+  background-image: url(images/laptop-use.png);
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  margin-top: 10vh;
+
+  /* background: url(../img/glenn-carstens-peters-203007.jpg.png) bottom/cover; */
+}
+
+.laptop-use-photo .mask {
+  background-color: #472424;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.mask{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mask .client-description p{
+  color: #fff;
+  background-color:#464039;
+  margin: 7vh;
+  padding: 8vh;
+}
+
+.client-img{
+  color: #fff;
+}
+
+.client-img h5{
+  font-family: Myfont1, sans-serif;
+  
+}
+
+.news-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+  color: #472424;
+  font-weight: bold;
+  font-family: Myfont1, sans-serif;
+  margin-top: 6vh;
+}
+
+.new {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+  margin-top: 8vh;
+}
+
+.news img {
+  opacity: 2;
+  background-color: #472424;
+}
+
+.news-text {
+  margin-left: 1vw;
+  margin-top: -7vw;
+
+  color: #fff;
+  line-height: 2.7vh;
+}
+.news-text h5 {
+  font-family: Myfont1, sans-serif;
+  color: #fff;
+}
+
+.news-text span {
+  color: #ff7373;
+  font-weight: bold;
+}
+
+.news-text i {
+  color: #ff7373;
+  font-size: 1.3vw;
+}
+
+/** Help Section **/
+
+.help {
+  margin-top: 10vw;
+  background-color: #ff7373;
+  height: 30vh;
+  align-items: center;
+  display: flex;
+}
+
+.helps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.helps p {
+  color: #fff;
+  font-family: Myfont, sans-serif;
+  font-size: 2vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.helps button {
+  background-color: #472424;
+  color: #fff;
+  font-family: Myfont1, "sans-serif";
+  text-transform: uppercase;
+  padding: 1vw 2.44vw 1vw 2.44vw;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8vw;
+}
+
+.help-button button:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.help small {
+  color: #fff;
+  font-family: Myfont, sans-serif;
+  font-size: 0.8vw;
+  font-weight: 400;
+
+  text-transform: none;
+}
+
+.help i {
+  color: #fff;
+  font-size: 2vw;
+}
+
+.help-mail {
+  /* display: flex; */
+  flex-direction: row;
+}
+
+.help-mail small {
+  flex-direction: column;
+}
+
+/** Footer **/
+
+footer {
+  background-color: #623232;
+  height: 40vh;
+}
+
+footer .footer {
+  display: flex;
+  color: #fff;
+  justify-content: space-around;
+}
+
+footer .footer .info-blocks {
+  margin-top: 6vh;
+  align-items: center;
+  line-height: 2.7vh;
+  text-align: center;
+
+}
+
+footer .footer .info-blocks:last-child{
+  margin-top: 7vh;
+}
+
+hr {
+  margin-top: 6.2vh;
+  opacity: 0.3;
+}
+
+/** Footer **/
+
+.footer1{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10vh;
+  align-items: center;
+  gap: 8vw;
+}
+
+.footer1 .copyright{
+  color: #fff;
+}
+
+.footer1 a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer1 a i{
+  font-size: 1.5vw;
+  
+}
